@@ -1,0 +1,21 @@
+@import "var";
+@import "header";
+@import "main";
+@import "desktop";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 4rem 2.5rem;
+    background-color: #FAFAFA;
+    color: $color-text-p;
+}
+
+footer {
+    text-align: center;
+}

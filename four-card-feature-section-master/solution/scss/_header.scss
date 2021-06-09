@@ -1,0 +1,17 @@
+header {
+    margin: 2rem 0;
+    text-align: center;
+
+    h2, h1 {
+        color: $color-text-heading;
+    }
+
+    h2 {
+        font-weight: 200;
+        font-size: 2rem;
+    }
+
+    p {
+        margin: 1rem 0;
+    }
+}

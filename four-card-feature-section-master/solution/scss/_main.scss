@@ -1,0 +1,46 @@
+main {
+    margin: 6rem 0;
+
+    .card {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        margin: 2rem 0;
+        padding: 2rem;
+        border-radius: 10px;
+        border-top: 5px solid black;
+
+        display: grid;
+        grid-template-rows: auto 1fr;
+
+        img {
+            margin-top: 1rem;
+            justify-self: end;
+        }
+    }
+
+    .card-blue {
+        border-color: $color-blue;
+    }
+
+    .card-red {
+        border-color: $color-red;
+    }
+
+    .card-yellow {
+        border-color: $color-yellow;
+    }
+
+    .card-blue-dark {
+        border-color: $color-blue-dark;
+    }
+
+    h3 {
+        color: $color-text-heading;
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+
+    p {
+        margin: 1rem 0;
+        font-weight: 400;
+    }
+}

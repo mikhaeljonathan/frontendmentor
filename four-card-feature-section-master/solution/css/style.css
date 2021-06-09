@@ -1,0 +1,88 @@
+header {
+  margin: 2rem 0;
+  text-align: center;
+}
+header h2, header h1 {
+  color: #4C4E5D;
+}
+header h2 {
+  font-weight: 200;
+  font-size: 2rem;
+}
+header p {
+  margin: 1rem 0;
+}
+
+main {
+  margin: 6rem 0;
+}
+main .card {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  margin: 2rem 0;
+  padding: 2rem;
+  border-radius: 10px;
+  border-top: 5px solid black;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+main .card img {
+  margin-top: 1rem;
+  justify-self: end;
+}
+main .card-blue {
+  border-color: #52CDCE;
+}
+main .card-red {
+  border-color: #DB5B5F;
+}
+main .card-yellow {
+  border-color: #F3AE58;
+}
+main .card-blue-dark {
+  border-color: #599DE9;
+}
+main h3 {
+  color: #4C4E5D;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+main p {
+  margin: 1rem 0;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 1000px) {
+  header {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  main {
+    display: grid;
+    margin-top: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    padding: 0 3rem;
+  }
+  main .column-single {
+    align-self: center;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 4rem 2.5rem;
+  background-color: #FAFAFA;
+  color: #B4B4B6;
+}
+
+footer {
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

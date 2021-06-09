@@ -1,0 +1,17 @@
+@media screen and (min-width: 1000px){
+    header {
+        width: 50%;
+        margin: 0 auto;
+    }
+    main {
+        display: grid;
+        margin-top: 0;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2rem;
+        padding: 0 3rem;
+
+        .column-single {
+            align-self: center;
+        }
+    }
+}
