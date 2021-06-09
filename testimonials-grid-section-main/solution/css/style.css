@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 3rem 1rem;
+    background-color: #EDF2F8;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.card {
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: .5em;
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.person {
+    display: flex;
+    align-items: center;
+}
+
+.person img {
+    border: 2px solid white;
+    border-radius: 100%;
+    margin-right: 1rem;
+}
+
+.card h2 {
+    margin: 1rem 0;
+}
+
+.card p{
+    line-height: 1.25;
+}
+
+.card-1 h2,
+.card-1 h3,
+.card-2 h2,
+.card-2 h3,
+.card-4 h2,
+.card-4 h3 {
+    color: white;
+}
+
+.bg-image {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 2rem;
+}
+
+.card-1 {
+    position: relative;
+    z-index: -2;
+    background-color: #733FC8;
+}
+
+.card-1 p{
+    color: #A775F2; 
+}
+
+.card-2 {
+    background-color: #49556B;
+}
+
+.card-2 p{
+    color: #C0CAD6;
+}
+
+.card-3 h2, .card-3 h3 {
+    color: #4D545F; 
+}
+
+.card-3 p {
+    color: #8A8F93;
+}
+
+.card-4 {
+    background-color: #18202D;
+}
+
+.card-4 img{
+    border: 3px solid #67478A;
+}
+
+.card-4 p{
+    color: #A6ABB6;
+}
+
+.card-5 h2, .card-5 h3 {
+    color: #484F59;
+}
+
+.card-5 p{
+    color: #A4A8AB;
+}
+
+@media screen and (min-width: 1000px){
+    body {
+        padding: 2rem;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: "card-1 card-1 card-2 card-5"
+                             "card-3 card-4 card-4 card-5";
+        grid-gap: 1.5rem;
+    }
+
+    .card {
+        margin: 0;
+    }
+
+    .card-1 {
+        grid-area: card-1;
+    }
+
+    .card-2 {
+        grid-area: card-2;
+    }
+    
+    .card-3 {
+        grid-area: card-3;
+    }
+
+    .card-4 {
+        grid-area: card-4;
+    }
+
+    .card-5 {
+        grid-area: card-5;
+    }
+}
