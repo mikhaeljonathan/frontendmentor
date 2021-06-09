@@ -1,3 +1,3 @@
 # frontendmentor
 
-This repo is for "frontendmentor.io" challenges.
+This repo is my solutions for "frontendmentor.io" challenges.
