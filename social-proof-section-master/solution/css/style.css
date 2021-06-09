@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    padding: 4rem 0;
+    position: relative;
+}
+
+.bg-top-desktop, .bg-bottom-desktop{
+    display: none;
+}
+
+.bg-top-mobile{
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.bg-bottom-mobile{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: #4E1D4F;
+    margin: 2rem;
+}
+
+h2 {
+    font-weight: 500;
+    color: #B4AEB4;
+    padding: 2rem;
+}
+
+.reviews {
+    margin-bottom: 5rem;;
+}
+
+.review {
+    background-color: #F7F2F8;
+    text-align: center;
+    color: #4E1D4F;
+    font-weight: 700;
+    margin: 1rem 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.review p{
+    margin-top: 1rem;
+}
+
+.testimonial {
+    background-color: #511F50;
+    color: white;
+    margin: 1rem 2rem;
+    padding: 2rem;
+    line-height: 2;
+    border-radius: 10px;
+}
+
+.testimonial-person {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial img {
+    border-radius: 100%;
+    margin-right: 2rem;
+}
+
+.testimonial h4 {
+    color: #AF659D;
+}
+
+.testimonial p{
+    margin-top: 2rem;
+    clear: left;
+}
+
+@media screen and (min-width: 1080px){
+    .bg-bottom-mobile, .bg-top-mobile{
+        display: none;
+    }
+
+    .bg-bottom-desktop, .bg-top-desktop {
+        display: inline-block;
+        position: absolute;
+    }
+
+    .bg-top-desktop {
+        width: 50%;
+        top: 0;
+    }
+
+    .bg-bottom-desktop {
+        height: 80%;
+        bottom: 0;
+        right: 0;
+    }
+
+    header {
+        width: 50%;
+        text-align: left;
+        padding-left: 3rem;
+    }
+
+    h2 {
+        padding-top: 0;
+        font-size: 1.3rem;
+        line-height: 1.5;
+    }
+
+    .reviews {
+        width: 40%;
+        position: absolute;
+        top: 8rem;
+        right: 3rem;
+    }
+
+    .review {
+        text-align: left;
+        padding-left: 2rem;
+    }
+
+    .review p {
+        display: inline-block;
+        margin-left: 2rem;
+    }
+
+    .review-top {
+        position: relative;
+        right: 6rem;
+    }
+
+    .review-mid {
+        position: relative;
+        right: 3rem;
+    }
+
+    .testimonials {
+        margin: 2rem 0 4rem;
+        display: flex;
+        padding: 0 3rem;
+    }
+
+    .testimonial {
+        margin: 0 1rem;
+    }
+
+    .testimonial-mid {
+        position: relative;
+        top: 1rem;
+    }
+
+    .testimonial-bottom {
+        position: relative;
+        top: 2rem;
+    }
+}
