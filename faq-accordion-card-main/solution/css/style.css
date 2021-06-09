@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  font-family: "Kumbh Sans", sans-serif;
+  display: grid;
+  padding: 15rem 2rem 8rem;
+}
+
+.container {
+  background-color: white;
+  padding: 2rem;
+  place-items: center;
+  border-radius: 1rem;
+  box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.illustration {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.img-pattern-desktop {
+  display: none;
+}
+
+.img-pattern-mobile {
+  position: absolute;
+  width: 500px;
+  top: -2rem;
+}
+
+.img-woman {
+  position: relative;
+  bottom: 14rem;
+  right: 1rem;
+  width: 500px;
+}
+
+.img-box {
+  display: none;
+}
+
+.content {
+  position: relative;
+  top: -3rem;
+}
+
+.content h1 {
+  margin-bottom: 2rem;
+  text-align: center;
+  color: hsl(237, 12%, 33%);
+}
+
+.faq {
+  padding: 1rem 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid hsl(240, 5%, 91%);
+}
+
+.ans {
+  display: none;
+  color: hsl(240, 6%, 50%);
+  padding-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.faq-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.faq-title:hover h2 {
+  color: hsl(14, 88%, 65%);
+}
+
+.img-down {
+  width: 0.75rem;
+  height: auto;
+}
+
+.faq h2 {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-right: 3rem;
+  color: hsl(240, 6%, 50%);
+}
+
+.faq-active h2 {
+  color: hsl(237, 12%, 33%);
+  font-weight: 700;
+}
+
+.faq-active .img-down {
+  transform: rotate(180deg);
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    padding: 6rem 10rem;
+    height: 100vh;
+  }
+
+  .container {
+    display: flex;
+    padding: 5rem;
+    overflow: hidden;
+  }
+
+  .img-pattern-desktop {
+    right: 35%;
+    top: -95%;
+    display: inline-block;
+  }
+
+  .img-pattern-mobile {
+    display: none;
+  }
+
+  .img-bg {
+    position: absolute;
+  }
+
+  .img-box {
+    z-index: 10;
+    left: 2%;
+    bottom: 30%;
+    display: inline-block;
+  }
+
+  .img-woman {
+    content: url("../images/illustration-woman-online-desktop.svg");
+    position: relative;
+    bottom: 0;
+    right: 35%;
+  }
+
+  .content {
+    position: relative;
+    width: 110%;
+    right: 5%;
+    top: 0;
+  }
+
+  .content h1 {
+    text-align: left;
+  }
+}
