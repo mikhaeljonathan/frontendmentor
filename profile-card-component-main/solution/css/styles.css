@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(25, 161, 173);
+    font-family: 'Helvetica', sans-serif;
+    color: rgb(55,56,76);
+}
+
+.main-container {
+    position: relative;
+    height: 100%;
+}
+
+.bg-image-top {
+    position: absolute;
+    width: 50%;
+    left: 0;
+    bottom: 60%;
+}
+
+.bg-image-bottom {
+    position: absolute;
+    width: 60%;
+    right: -100px;
+    top: 50%;
+    overflow: hidden;
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 20px;
+    box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
+}
+
+.feature-box {
+    display: inline-block;
+}
+
+.heading img {
+    border: solid 5px white;
+    border-radius: 100%;
+    position: relative;
+    top: 70px;
+}
+
+.heading {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-image: url("../images/bg-pattern-card.svg");
+    height: 40%;
+    padding: 5% 0;
+}
+
+.title {
+    padding: 4rem 5rem 2rem;
+    line-height: 1.5;
+}
+
+.title span{
+    font-weight: 100;
+    color: rgb(133,133,140);
+    font-size: 1.3rem;
+}
+
+.title h1 {
+    font-size: 1.5rem;
+}
+
+.title h2 {
+    font-weight: 100;
+    color: rgb(133,133,140);
+    font-size: 1rem;
+}
+
+.feature-box {
+    padding: 5%;
+}
+
+.feature-box h3{
+    font-weight: bold;
+}
+
+.feature-box p{
+    color: rgb(133,133,140);
+    font-size: 0.8rem;
+}
+
+hr {
+    border: none;
+    border-top: solid 1px rgb(133,133,140);
+}
