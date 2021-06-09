@@ -1,0 +1,109 @@
+:root {
+    --sedan: #E28525;
+    --suv: #016972;
+    --luxury: #00403F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F2F2F2;
+    padding: 4rem 1rem;
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 1.5rem 0;
+}
+
+p {
+    opacity: .7;
+    line-height: 2;
+    margin: 1.5rem 0;
+}
+
+.card {
+    padding: 3rem;
+}
+
+button {
+    font-family: 'Lexend Deca', sans-serif;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+}
+
+.card-sedan {
+    background-color: var(--sedan);
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+.card-sedan button {
+    color: var(--sedan);
+}
+
+.card-suv {
+    background-color: var(--suv);
+}
+
+.card-suv button {
+    color: var(--suv);
+}
+
+.card-luxury {
+    background-color: var(--luxury);
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+.card-luxury button {
+    color: var(--luxury);
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        height: 100vh;
+        padding: 5rem 10rem;
+    }
+
+    .container {
+        display: flex;
+        height: 100%;
+    }
+
+    .card {
+        display: grid;
+        grid-template-rows: auto auto 1fr auto;
+    }
+
+    .card h2, .card p {
+        justify-self: start;
+        align-self: start;
+    }
+
+    .card button {
+        align-self: start;
+        justify-self: start;
+    }
+
+    .card-sedan {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: .5rem;
+    }
+
+    .card-luxury {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: .5rem;
+    }
+
+}
